@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Taller - Programación Web I</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      margin: 20px auto;
+      max-width: 900px;
+      padding: 10px 20px;
+      line-height: 1.5;
+    }
+    h1, h2 {
+      color: #00509e;
+      border-bottom: 2px solid #00509e;
+      padding-bottom: 6px;
+      margin-top: 30px;
+    }
+    ul {
+      background-color: #dbe9f4;
+      padding: 10px 20px;
+      border-radius: 6px;
+      width: max-content;
+    }
+    .foto {
+      width: 400px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 0;
+      border: 3px solid #00509e;
+      display: block;
+      margin: 15px 0;
+    }
+    .habilidades {
+      background-color: #dbe9f4;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 10px;
+      width: max-content;
+    }
+    .quiz .question {
+      margin-top: 15px;
+    }
+    .quiz .question strong {
+      color: #004080;
+    }
+    .quiz .answer {
+      margin-left: 20px;
+      color: #333;
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #555;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+    }
+    .correcciones {
+      background-color: #e0f0ff;
+      border-left: 4px solid #0077cc;
+      padding: 10px 15px;
+      margin: 20px 0;
+      font-family: monospace;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Parte 1 – Código HTML ordenado -->
+  <h1>Mi Hoja de Vida</h1>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+  </ul>
+  <p>Estudiante de Aguadas</p>
+
+  <!-- Parte 2 – Texto extra al final -->
+  <p>
+    Hago constar que la información aquí consignada es verídica y puede ser comprobada por cualquier persona.
+  </p>
+  <p>
+    &copy; Derechos de autor reservados.
+  </p>
+
+  <!-- Parte 3 – Corrección de errores -->
+  <h2>Corrección de errores en fragmentos HTML y CSS</h2>
+  <div class="correcciones">
+&lt;h1&gt;Mi nombre&lt;/h1&gt;  <!-- cerrar la etiqueta correctamente --><br>
+&lt;p&gt;Este es un párrafo&lt;/p&gt;  <!-- cerrar la etiqueta correctamente --><br>
+&lt;img src="imagen.jpg" alt="Descripción" /&gt;  <!-- añadir alt y cerrar etiqueta --><br>
+colr: blue;  /* debe ser color: blue; */<br>
+font sixe: 16px;  /* debe ser font-size: 16px; */
+  </div>
+
+  <!-- Parte 4 – Quiz Creativo -->
+  <h2>Quiz Creativo</h2>
+  <div class="quiz">
+    <div class="question">
+      <strong>1. ¿Cuál es la diferencia entre &lt;ul&gt; y &lt;ol&gt;?</strong>
+      <div class="answer">Ul crea una lista desordenada (con viñetas) y ol crea una lista ordenada (numerada).</div>
+    </div>
+    <div class="question">
+      <strong>2. ¿Qué hace la propiedad border-radius en CSS?</strong>
+      <div class="answer">Redondea las esquinas de un elemento.</div>
+    </div>
+    <div class="question">
+      <strong>3. ¿Qué propiedad de CSS cambia el color de fondo?</strong>
+      <div class="answer">background-color</div>
+    </div>
+    <div class="question">
+      <strong>4. ¿Cómo se escribe un comentario en HTML?</strong>
+      <div class="answer">&lt;!-- Este es un comentario --&gt;</div>
+    </div>
+    <div class="question">
+      <strong>5. ¿Cuál es la función de la etiqueta &lt;header&gt;?</strong>
+      <div class="answer">Define la cabecera o encabezado de una sección o página.</div>
+    </div>
+    <div class="question">
+      <strong>6. ¿Qué propiedad CSS se usa para centrar un texto?</strong>
+      <div class="answer">text-align: center;</div>
+    </div>
+    <div class="question">
+      <strong>7. ¿Cuál es la diferencia entre id y class en CSS?</strong>
+      <div class="answer">El id es único para un elemento y class puede aplicarse a varios elementos.</div>
+    </div>
+    <div class="question">
+      <strong>8. ¿Qué significa la etiqueta &lt;footer&gt;?</strong>
+      <div class="answer">Define el pie de página de una sección o página.</div>
+    </div>
+    <div class="question">
+      <strong>9. ¿Qué etiqueta se usa para insertar una imagen en HTML?</strong>
+      <div class="answer">&lt;img&gt;</div>
+    </div>
+    <div class="question">
+      <strong>10. ¿Cuál es la etiqueta correcta para un párrafo?</strong>
+      <div class="answer">&lt;p&gt;</div>
+    </div>
+    <div class="question">
+      <strong>11. ¿Cómo se crea una lista ordenada?</strong>
+      <div class="answer">Usando &lt;ol&gt; y sus elementos &lt;li&gt;.</div>
+    </div>
+    <div class="question">
+      <strong>12. ¿Qué atributo se usa para enlazar una hoja de estilos CSS en HTML?</strong>
+      <div class="answer">&lt;link rel="stylesheet" href="estilos.css"&gt;</div>
+    </div>
+    <div class="question">
+      <strong>13. ¿Qué propiedad de CSS se usa para cambiar el color del texto?</strong>
+      <div class="answer">color</div>
+    </div>
+    <div class="question">
+      <strong>14. ¿Cómo se centra un texto en CSS?</strong>
+      <div class="answer">text-align: center;</div>
+    </div>
+  </div>
+
+  <!-- Parte 5 – Mi página personal -->
+  <h2>Mi Página Personal</h2>
+  <h3>Tu Nombre Aquí</h3>
+  <img src="captura.png" alt="captura" class="foto" />
+  <p>Hola, soy estudiante de programación web. Me gusta crear páginas dinámicas y atractivas.</p>
+
+  <div class="habilidades">
+    <h3>Habilidades</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </div>
+
+  <!-- Parte 6 – Reflexión -->
+  <h2>Reflexión</h2>
+  <p>
+    Escribir el código fue más fácil que imaginar el diseño, porque el diseño depende mucho de la creatividad y visualización. 
+    Me imagino esta página funcionando bien en un navegador real, mostrando el contenido ordenado, con la imagen destacada y fácil de leer.
+  </p>
+
+  <footer>
+    <p>© 2025 Taller Programación Web I</p>
+  </footer>
+
+</body>
+</html>
